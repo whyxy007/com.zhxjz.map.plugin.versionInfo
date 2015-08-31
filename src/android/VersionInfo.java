@@ -1,4 +1,4 @@
-package com.zhxjz.map.plugin;
+﻿package com.zhxjz.map.plugin;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -16,7 +16,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.app.AlertDialog.Builder;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
