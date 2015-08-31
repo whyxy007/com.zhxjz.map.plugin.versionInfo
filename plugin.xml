@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+      id="com.zhxjz.map.plugin.AudioCtrl"
+      version="1.0.0">
+    <name>VersionInfo</name>
+    <description>version info</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,VersionInfo</keywords>
+
+    <js-module src="www/versionInfo.js" name="versionInfo">
+        <clobbers target="versionInfo" />
+    </js-module>
+    
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="VersionInfoPlugin" >
+                <param name="android-package" value="com.zhxjz.map.plugin.VersionInfo"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/VersionInfo.java" target-dir="src/com/zhxjz/map/plugin" />
+    </platform>
+
+   
+</plugin>
